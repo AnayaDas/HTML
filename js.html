@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" id="name1" name="name">
+    </form><br>
+    <button onclick="call()">click here</button>
+    <div id="name"></div>
+    <p>Have a <span id="wish"> good day!!</span></p>
+    
+    <script>
+        function call(){
+            var name = document.getElementById("name1").value
+       
+        if(name == ""){
+            alert('Please enter your name')
+        }
+        alert('how is your day?' +name)
+        document.getElementById("name").innerHTML = "Hello "+name
+        let color = document.querySelector("span")
+         color.style.background = "red" 
+        }
+    </script>
+</body>
+</html>

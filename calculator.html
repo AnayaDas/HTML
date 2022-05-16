@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        First Number:<input type="number" id="no1" name="number1"><br><br>
+        Second Number:<input type="number" id="no2" name="number2"><br><br>
+        <button type="button" id="button1" onclick="add()">Add</button>
+        <button type="button" id="button2" onclick="sub()">Sub</button>
+        <button type="button" id="button3" onclick="multi()">Multi</button>
+        <button type="button" id="button4" onclick="div()">Div</button>
+        <br><br>
+        Result:<input type="number" id="result" name="result">
+    </form>
+    <script>
+        function add(){
+        let number1 = parseFloat(document.getElementById("no1").value)
+        let number2 = parseFloat(document.getElementById("no2").value)
+        let result = document.getElementById("result")
+        let c = number1+number2
+        result.value = c;
+        }
+    </script>
+     <script>
+        function sub(){
+        let number1 = parseFloat(document.getElementById("no1").value)
+        let number2 = parseFloat(document.getElementById("no2").value)
+        let result = document.getElementById("result")
+        let c = number1-number2
+        result.value = c;
+        }
+    </script>
+     <script>
+        function multi(){
+        let number1 = parseFloat(document.getElementById("no1").value)
+        let number2 = parseFloat(document.getElementById("no2").value)
+        let result = document.getElementById("result")
+        let c = number1*number2
+        result.value = c;
+        }
+    </script>
+     <script>
+        function div(){
+        let number1 = parseFloat(document.getElementById("no1").value)
+        let number2 = parseFloat(document.getElementById("no2").value)
+        let result = document.getElementById("result")
+        let c = number1/number2
+        result.value = c;
+        }
+    </script>
+    
+</body>
+</html>

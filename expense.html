@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+   body{
+       text-align: center;
+   }
+   table{
+       margin: auto;
+   }
+   </style>
+    </head>
+<body>
+    <form>
+    <h1>Monthly Expense Report<hr></h1><br>
+    <table>
+    <tr><td>Date:</td><td> <input type="date" id="date" name="today" max="2030-01-01" min="1995-01-01"></td></tr>
+    <tr><td>Mortgage :</td><td><input type="text" name="mortgage"></td></tr>
+    <tr><td>Gas :</td><td> <input type="text" name="gas"></td></tr>
+    <tr><td>Child Care :</td><td> <input type="text" name="childCare"></td></tr>
+    <tr><td>Insurance :</td><td><input type="text" name="ins"></td></tr>
+    <tr><td><input type="radio" id="monthly" name="expense" value="monthly">
+    <label for="monthly">Monthly</label> 
+    <input type="radio" id="yearly" name="expense" value="yearly">
+    <label for="yearly">Yearly</label></td> </tr>
+    <tr><td>Misc :</td><td><input type="text" name="misc"></td></tr>
+    <tr><td><input type="submit"></td></tr>
+</table>
+
+    </form>
+</body>
+</html>
