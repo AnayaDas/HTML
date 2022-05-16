@@ -44,3 +44,6 @@ function pass(){
 let details = employeeList.map((employee)=>{return employee.getDetails();});
 localStorage.setItem('details',JSON.stringify(details));
 }
+
+// git config --global user.email "dasanaya50@gmail.com"
+// git config --global user.name "AnayaDas"
